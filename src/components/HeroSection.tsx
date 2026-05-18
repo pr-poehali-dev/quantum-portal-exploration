@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="text-white text-2xl font-bold tracking-tight">
-              🔥 БаняМобиль
+              🪵 Золотник
             </Link>
             <nav className="hidden ml-12 space-x-8 md:flex">
               {["Модели", "Комплектации", "Доставка", "Цены", "Отзывы", "Контакты"].map((item, index) => (
@@ -49,16 +49,16 @@ const HeroSection = () => {
       <main className="relative z-10 flex flex-col flex-1 items-center justify-center px-6 py-12 mx-auto text-center max-w-7xl">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-green-900/40 border border-green-700/50 text-green-400 text-sm">
           <Icon name="Truck" size={14} />
-          Доставка по всей России
+          Доставка манипулятором — заезжаем прямо на участок
         </div>
 
         <h1 className="max-w-4xl mx-auto text-4xl font-bold text-white md:text-5xl lg:text-6xl leading-tight">
-          Мобильные бани —<br />
-          <span className="text-green-400">баня там, где ты</span>
+          Готовая баня — <br />
+          <span className="text-green-400">за один день на вашем участке</span>
         </h1>
         <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-300">
-          Готовые бани на колёсах собственного производства.<br />
-          Приедем, установим и вы попаритесь уже в этот weekend.
+          Собираем в цеху, привозим манипулятором и устанавливаем под ключ.<br />
+          Никакого строительства — баня готова к первой топке в день доставки.
         </p>
 
         {/* Stats */}
@@ -81,30 +81,30 @@ const HeroSection = () => {
             to="/catalog"
             className="flex items-center justify-center px-8 py-3 text-lg font-medium text-gray-900 bg-white rounded-md hover:bg-gray-100 transition-colors"
           >
-            Смотреть каталог
+            Смотреть модели
             <Icon name="ArrowRight" size={20} className="ml-2" />
           </Link>
           <Link
             to="/order"
             className="px-8 py-3 text-lg font-medium text-white bg-green-700 rounded-md hover:bg-green-600 transition-colors"
           >
-            Получить расчёт стоимости
+            Рассчитать стоимость
           </Link>
         </div>
 
         {/* Trust Section */}
         <div className="w-full mt-24">
           <p className="mb-8 text-gray-400">
-            Нас выбирают <span className="text-white">дачники, турбазы</span>, санатории и
-            корпоративные клиенты по всей России
+            Нас выбирают <span className="text-white">владельцы участков, турбазы</span>, базы отдыха и
+            частные клиенты по всей России
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
             {[
-              { icon: "Shield", label: "ГОСТ качество" },
-              { icon: "Flame", label: "Финская технология" },
-              { icon: "TreePine", label: "Кедр и липа" },
+              { icon: "Factory", label: "Собственный цех" },
+              { icon: "Truck", label: "Доставка манипулятором" },
+              { icon: "TreePine", label: "Кедр и осина" },
               { icon: "Star", label: "4.9 / 5.0 рейтинг" },
-              { icon: "Wrench", label: "Сервис 24/7" },
+              { icon: "Shield", label: "Гарантия 3 года" },
             ].map((item) => (
               <div key={item.label} className="flex flex-col items-center gap-2 text-gray-400 hover:text-white transition-colors">
                 <Icon name={item.icon} fallback="Star" size={24} />
